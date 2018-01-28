@@ -25,11 +25,12 @@ public class SeleniumTest {
     public void test() throws Exception{
         WebDriver driver = WebDriverFactory.getDriver();
         driver.get(PAGE_URL);
-        driver.findElement(By.id("index_email")).sendKeys("jerrek@mail.ru");
-        driver.findElement(By.id("index_pass")).sendKeys("1bredkirill555");
+        driver.manage().window().maximize();
+        driver.findElement(By.id("index_email")).sendKeys("");
+        driver.findElement(By.id("index_pass")).sendKeys("");
         driver.findElement(By.id("index_login_button")).click();
         driver.findElement(By.id("l_msg")).click();
-        driver.findElement(By.id("im_dialogs_search")).sendKeys("Annie Kelyas");
+        driver.findElement(By.id("im_dialogs_search")).sendKeys("Сергей Бесхмельницын");
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
