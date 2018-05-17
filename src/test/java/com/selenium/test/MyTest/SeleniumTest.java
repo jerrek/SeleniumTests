@@ -31,16 +31,16 @@ public class SeleniumTest {
         driver.get(PAGE_URL);
         driver.manage().window().maximize();
         Thread.sleep(timeout);
-        driver.findElement(By.id("index_email")).click();/*sendKeys("jerrek@mail.ru")*/;
-        driver.findElement(By.id("index_email")).sendKeys("jerrek@mail.ru");
+        driver.findElement(By.id("index_email")).click();;
+        driver.findElement(By.id("index_email")).sendKeys();
         Thread.sleep(timeout);
-        driver.findElement(By.id("index_pass")).sendKeys("1bredkirill555");
+        driver.findElement(By.id("index_pass")).sendKeys();
         Thread.sleep(timeout);
         driver.findElement(By.id("index_login_button")).click();
         Thread.sleep(timeout);
         driver.findElement(By.id("l_msg")).click();
         Thread.sleep(timeout);
-        driver.findElement(By.id("im_dialogs_search")).sendKeys("Екатерина Мальнова");
+        driver.findElement(By.id("im_dialogs_search")).sendKeys();
         Thread.sleep(timeout+20000);
 
         robot.keyPress(KeyEvent.VK_ENTER);
