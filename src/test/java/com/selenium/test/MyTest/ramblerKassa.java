@@ -21,6 +21,7 @@ public class ramblerKassa {
     }
     @Test
     public void test() throws Exception{
+        System.out.println("TEST START");
         WebDriver driver = WebDriverFactory.getDriver();
         driver.get(PAGE_URL);
         driver.manage().window().maximize();
@@ -30,6 +31,7 @@ public class ramblerKassa {
         driver.findElement(By.xpath("//li[@class='date_item']/span[@class='date_link']/time[@class='date_item__time']")).click();
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[@class='rasp_list']/ul[@class='rasp_time']/li[@class='btn_rasp']")).click();
+        System.out.println("TEST END");
     }
 
 }
